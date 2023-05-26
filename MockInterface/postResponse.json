@@ -1,0 +1,23 @@
+[
+  {
+    "description": "mock_post_demo",
+    "request": {
+      "uri": "/demo",
+      "method": "post",
+      "json": {
+        "name": "jzy",
+        "passwd": 123456
+      }
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "code": "200",
+        "msg": "请求成功",
+        "date": "mock测试demo"
+      }
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "description": "mock_get_demo",
+    "request": {
+      "uri": "/demo"
+    },
+    "response": {
+      "json": {
+        "code": "200",
+        "msg": "请求成功",
+        "date": "mock测试demo"
+      }
+    }
+  }
+]
