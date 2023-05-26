@@ -4,6 +4,9 @@
     "request": {
       "uri": "/demo",
       "method": "post",
+      "headers": {
+        "content-type": "applicathion/json"
+      },
       "json": {
         "name": "jzy",
         "passwd": 123456
