@@ -11,5 +11,23 @@
         "date": "mock测试demo"
       }
     }
+  },
+
+  {
+    "description": "带参get请求示例",
+    "request": {
+      "uri": "/getDemoWithParam",
+      "method": "get",
+      "queries": {
+        "name": "jzy"
+      }
+    },
+    "response": {
+      "json": {
+        "code": "200",
+        "msg": "请求成功",
+        "date": "mock测试demo"
+      }
+    }
   }
 ]

@@ -5,7 +5,7 @@
       "uri": "/demo",
       "method": "post",
       "headers": {
-        "content-type": "applicathion/json"
+        "content-type": "application/json"
       },
       "json": {
         "name": "jzy",
@@ -20,6 +20,83 @@
         "code": "200",
         "msg": "请求成功",
         "date": "mock测试demo"
+      }
+    }
+  },
+
+  {
+    "description": "返回带cookie信息的post请求",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "jzy",
+        "passwd": 123456
+      }
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "code": "200",
+        "msg": "登录成功",
+        "date": "获取cookies成功"
+      }
+    }
+  },
+  {
+    "description": "mock_post_demo",
+    "request": {
+      "uri": "/cookies/with/post",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "json": {
+        "code": "200",
+        "msg": "请求成功",
+        "date": "携带cookie请求成功"
+      }
+    }
+  },
+
+  {
+    "description": "获取商品ID的接口",
+    "request": {
+      "uri": "/getGoodsId",
+      "method": "get"
+    },
+    "response": {
+      "json": {
+        "goodsId": 9527
+      }
+    }
+  },
+
+  {
+    "description": "需要携带商品ID才能请求的接口",
+    "request": {
+      "uri": "/getSkuInfo",
+      "method": "post",
+      "json": {
+        "goodsId": 9527
+      }
+    },
+    "response": {
+      "json": {
+        "skuId": 5468,
+        "skuName": "天堂雨伞",
+        "skuNo": "sku_865465465",
+        "skuSprice":"28.88¥"
       }
     }
   }
